@@ -1,0 +1,66 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type=text/css>
+        div{
+            color:'white';
+        }
+        h1{
+            color:white;
+            font-family:arial, sans-serif;
+            font-size:40px;
+            font-weight:bold;
+            margin-top:200px;
+            transform : 2s;
+        }
+       
+
+         body{
+            background-color: black;
+            {% comment %} background-image:url("{% static '\DiabetesPrediction\images\img4 (3).jpg' %}"); {% endcomment %}
+            background-image:cover;
+            background-image:no-repeat;
+            background-image:cover;  
+            background-size: cover;
+            background repeat: no-repeat;
+            
+            
+        } 
+        input[type=submit]{
+            display:flex;
+            background-color:#FFA500;
+            border:2px;
+            color:white;
+            padding:16px 32px;
+            cursor:pointer;
+            margin-top: 15px;
+            border-radius: 10px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div align ='center'>
+        <h1><em>
+            WELCOME TO DISEASSES PREDICTION SYSTEM</em>
+        </h1>
+        
+        <form target="" action ="predict">
+            <input type="submit" value ="DiabetesPrediction">
+        </form>
+        <form target="" action="see">
+            <input type="submit" value ="Heart Prediction"></form>
+        </div>
+        <img src="\static\DiabetesPrediction\images\medhelp (2).png" alt="">
+        
+</body>
+</html>
+

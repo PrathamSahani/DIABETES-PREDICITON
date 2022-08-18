@@ -1,0 +1,141 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <title> Prediction page</title>
+        <style>
+            body{
+                background-color: black;
+            {% comment %} background-image : url("{%static '\DiabetesPrediction\images\img4 (4).jpg'%}"); {% endcomment %}
+            background-size: cover;
+            background repeat: no-repeat;
+
+            }
+            img{
+                width:560px;
+                {% comment %} right:120px; {% endcomment %}
+            }
+            .main{
+                position: absolute;
+                top:80px;
+                right: 170px;
+                {% comment %} left:110px; {% endcomment %}
+                {% comment %} left:820px; {% endcomment %}
+                width:550px;
+                background-color:white;
+                border-radius:15px;
+                align-items:center;
+               height:72vh;
+
+            }
+            .main:hover{
+                box-shadow: 50px 0px 20px 0px rgba(0,0,0,0.2);
+                
+            }
+            h1{
+                font-family: Times New Roman;
+                margin:20px,0;
+                color:#F6465B;
+                font-size:30px;
+                font-weight:bold;
+                animation-delay: 3.5s;
+            }
+            input[type=submit]{
+                background-color: #FFA500;
+                border: 2px;
+                color:white;
+                padding:10px 16px;
+                cursor:pointer;
+                margin-top: 15px;
+                border-radius: 10px;
+            }
+        
+            p{
+                color:#ffffff;
+            }
+            .row em{
+                color: #BF0A30;
+                
+            }
+         button[type=submit]{
+            background-color:#BF0A30 ;
+            border: 2px;
+            color:white;
+            padding:10px 16px;
+            cursor:pointer;
+            margin-top: 15px;
+            border-radius: 10px;
+         }
+         .id{
+            position: absolute;
+            top:40px;
+            right:40px;
+            
+           text-transform:none;
+
+         }
+            .id a{
+                text-transform:none;
+                text-align:none;
+                color:white; 
+            }
+            </style>
+    </head>
+    <body>
+        {% comment %} <img src="\static\DiabetesPrediction\images\medhelp.png" alt=""> {% endcomment %}
+        <p><em>WELCOME TO THE DIABETESPREDICTION PAGE</em></P>
+         <img src="\static\DiabetesPrediction\images\medhelp.png" alt="">
+            <div align ='center' class="main"> 
+                <h1>It's just a prediction; do consult with a Doctor  🤔</h1> <br/>
+                <form action= "result">
+                    <table>
+                        <tr>
+                            <td align="right">Pregnancies:</td>
+                            <td align="left"><input type="text" name="n1"></td> 
+                        </tr>
+                        <tr>
+                            <td align="right">Glucose:</td>
+                            <td align="left"><input type="text" name="n2"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Blood Pressure:</td>
+                            <td align="left"><input type="text" name="n3"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Skin Thickness:</td>
+                            <td align="left"><input type="text" name="n4"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Insulin:</td>
+                            <td align="left"><input type="text" name="n5"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">BMI:</td>
+                            <td align="left"><input type="text" name="n6"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Diabetes Padigree Function:</td>
+                            <td align="left"><input type="text" name="n7"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Age:</td>
+                            <td align="left"><input type="text" name="n8"></td>
+                        </tr>
+                    </table>
+                    <input  type="submit" value="PREDICT">
+                </form>
+                <div class="row">
+                 <h2><em>{{result2}}</em></h2>
+                 </div>
+                
+                
+            </div>
+            <form action="new" class="id" >
+                <a href="new">Home</a>
+                   {% comment %} <button type="submit">Go</button> {% endcomment %}
+                   
+               </form>
+           
+        </body>
+        </html>
