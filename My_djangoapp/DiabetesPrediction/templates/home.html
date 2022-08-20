@@ -11,7 +11,7 @@
         div{
             color:'white';
         }
-        h1{
+        h2{
             color:white;
             font-family:arial, sans-serif;
             font-size:40px;
@@ -22,18 +22,16 @@
        
 
          body{
-            background-color: black;
-            {% comment %} background-image:url("{% static '\DiabetesPrediction\images\img4 (3).jpg' %}"); {% endcomment %}
-            background-image:cover;
-            background-image:no-repeat;
-            background-image:cover;  
+            background-image:url("{% static '\DiabetesPrediction\images\img4 (3).jpg' %}");
+            {% comment %} background-image:cover; {% endcomment %}
+            {% comment %} background-image:no-repeat; {% endcomment %}
+            {% comment %} background-image:cover; {% endcomment %}  
             background-size: cover;
             background repeat: no-repeat;
             
             
         } 
         input[type=submit]{
-            display:flex;
             background-color:#FFA500;
             border:2px;
             color:white;
@@ -47,20 +45,16 @@
     </style>
 </head>
 <body>
-    
     <div align ='center'>
-        <h1><em>
-            WELCOME TO DISEASSES PREDICTION SYSTEM</em>
-        </h1>
         
-        <form target="" action ="predict">
-            <input type="submit" value ="DiabetesPrediction">
+        <h2><em>
+            WELCOME TO DIABETES PREDICTION SYSTEM</em>
+        </h2>
+        <form action ="predict">
+            <input type="submit" value ="Lets get started">
         </form>
-        <form target="" action="see">
-            <input type="submit" value ="Heart Prediction"></form>
+
         </div>
-        <img src="\static\DiabetesPrediction\images\medhelp (2).png" alt="">
-        
 </body>
 </html>
 

@@ -11,9 +11,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 
+# import os
 import os
+import django_heroku
 from pathlib import Path
-from jinja2 import TemplatesNotFound
+# from pickle import FALSE
+# from jinja2 import TemplatesNotFound
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +31,7 @@ SECRET_KEY = 'django-insecure-=uhoyu^j@1(#%5(stw5-a##+#zf1f%zh=to2+71pb@jp2ron=&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['https://deploy-diabetes-prediciton.herokuapp.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -44,7 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -125,6 +128,8 @@ STATICFILES_DIRS = (
 )
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 
 
 

@@ -6,21 +6,15 @@
         <title> Prediction page</title>
         <style>
             body{
-                background-color: black;
-            {% comment %} background-image : url("{%static '\DiabetesPrediction\images\img4 (4).jpg'%}"); {% endcomment %}
+            background-image : url("{%static '\DiabetesPrediction\images\img4 (4).jpg'%}");
             background-size: cover;
             background repeat: no-repeat;
 
             }
-            img{
-                width:560px;
-                {% comment %} right:120px; {% endcomment %}
-            }
             .main{
                 position: absolute;
                 top:80px;
-                right: 170px;
-                {% comment %} left:110px; {% endcomment %}
+                left:110px;
                 {% comment %} left:820px; {% endcomment %}
                 width:550px;
                 background-color:white;
@@ -50,7 +44,10 @@
                 margin-top: 15px;
                 border-radius: 10px;
             }
-        
+        input{
+            padding:20px,0;
+            margin:20px,0;
+        }
             p{
                 color:#ffffff;
             }
@@ -58,35 +55,12 @@
                 color: #BF0A30;
                 
             }
-         button[type=submit]{
-            background-color:#BF0A30 ;
-            border: 2px;
-            color:white;
-            padding:10px 16px;
-            cursor:pointer;
-            margin-top: 15px;
-            border-radius: 10px;
-         }
-         .id{
-            position: absolute;
-            top:40px;
-            right:40px;
-            
-           text-transform:none;
 
-         }
-            .id a{
-                text-transform:none;
-                text-align:none;
-                color:white; 
-            }
-            </style>
+        </style>
     </head>
     <body>
-        {% comment %} <img src="\static\DiabetesPrediction\images\medhelp.png" alt=""> {% endcomment %}
-        <p><em>WELCOME TO THE DIABETESPREDICTION PAGE</em></P>
-         <img src="\static\DiabetesPrediction\images\medhelp.png" alt="">
-            <div align ='center' class="main"> 
+        <p><em>WELCOME TO THE PREDICT PAGE</em></P>
+            <div align ='center' class="main">
                 <h1>It's just a prediction; do consult with a Doctor  🤔</h1> <br/>
                 <form action= "result">
                     <table>
@@ -123,19 +97,11 @@
                             <td align="left"><input type="text" name="n8"></td>
                         </tr>
                     </table>
-                    <input  type="submit" value="PREDICT">
+                    <input type="submit" value="PREDICT">
                 </form>
                 <div class="row">
                  <h2><em>{{result2}}</em></h2>
                  </div>
-                
-                
             </div>
-            <form action="new" class="id" >
-                <a href="new">Home</a>
-                   {% comment %} <button type="submit">Go</button> {% endcomment %}
-                   
-               </form>
-           
         </body>
         </html>
