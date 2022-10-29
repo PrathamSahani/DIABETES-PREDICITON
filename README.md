@@ -1,6 +1,9 @@
 # Diabetes-Prediction-System
 
 For report of this Daibetes Prediction click here.
+https://vitbhopalacin-my.sharepoint.com/:w:/g/personal/pratham_sahani2020_vitbhopal_ac_in/EcAxG1j75EBCmHo9XdZyTwYBRlUSFIHOhc1xbD4CH2I9_w?e=7oqFyl
+
+
 step: 1
 
 when you open my project (web system) on your browser you can see a AI interface on which you can see a button just click on button for check "Diabetes Prediction"
