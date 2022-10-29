@@ -1,4 +1,6 @@
 # Diabetes-Prediction-System
+
+For report of this Daibetes Prediction click here.
 step: 1
 
 when you open my project (web system) on your browser you can see a AI interface on which you can see a button just click on button for check "Diabetes Prediction"
