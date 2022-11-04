@@ -11,7 +11,7 @@ def home(request):
 def predict(request):
     return render(request, 'predict.html')
 def result(request):
-    data = pd.read_csv(r"C:\Users\rsp.tech Solution\Documents\Visual Studio 2019\My_djangoapp\DiabetesPrediction\diabetes.csv")
+    data = pd.read_csv(r"D:\MY work\DIABETES-PREDICITON-main\DiabetesPrediction\diabetes.csv")
     X= data.drop("Outcome",axis=1) 
     Y= data["Outcome"]
 
