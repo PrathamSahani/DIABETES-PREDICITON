@@ -3,7 +3,6 @@
 For report of this Daibetes Prediction 
 <a src="https://vitbhopalacin-my.sharepoint.com/:w:/g/personal/pratham_sahani2020_vitbhopal_ac_in/EcAxG1j75EBCmHo9XdZyTwYBRlUSFIHOhc1xbD4CH2I9_w?e=7oqFyl" >Click Here</a>
 
-https://vitbhopalacin-my.sharepoint.com/:w:/g/personal/pratham_sahani2020_vitbhopal_ac_in/EcAxG1j75EBCmHo9XdZyTwYBRlUSFIHOhc1xbD4CH2I9_w?e=7oqFyl
 
 
 step: 1
